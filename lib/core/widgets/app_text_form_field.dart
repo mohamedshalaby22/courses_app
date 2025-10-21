@@ -105,7 +105,8 @@ class AppTextFormField extends StatelessWidget {
         suffixIcon: suffixIcon ?? const SizedBox(),
         prefixIcon: prefixIcon,
         hintText: hintText,
-        fillColor: backgroundColor ?? Colors.deepPurple.shade50,
+        fillColor:
+            backgroundColor ?? AppColors.primaryColor.withValues(alpha: 0.1),
         filled: true,
         hintStyle:
             hintStyle ??
