@@ -1,0 +1,53 @@
+name: courses_app
+description: "A new Flutter project."
+publish_to: 'none' 
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  shared_preferences: ^2.5.3
+  hugeicons: ^1.1.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+
+ 
+  fonts:
+    # tajawal font
+    - family: tajawal
+      fonts:
+        - asset: fonts/Tajawal/Tajawal-Bold.ttf
+        - asset: fonts/Tajawal/Tajawal-ExtraBold.ttf
+        - asset: fonts/Tajawal/Tajawal-ExtraLight.ttf
+        - asset: fonts/Tajawal/Tajawal-Light.ttf
+        - asset: fonts/Tajawal/Tajawal-Medium.ttf
+        - asset: fonts/Tajawal/Tajawal-Regular.ttf
+
+     # elmessiri font
+    - family: elmessiri
+      fonts:
+        - asset: fonts/El_Messiri/ElMessiri-Bold.ttf
+        - asset: fonts/El_Messiri/ElMessiri-Medium.ttf
+        - asset: fonts/El_Messiri/ElMessiri-Regular.ttf
+        - asset: fonts/El_Messiri/ElMessiri-SemiBold.ttf
+   
+flutter_assets:
+  assets_path:
+    - assets/
+  output_path: lib/core/constants/
+  filename: app_images.dart
+  field_prefix: null
