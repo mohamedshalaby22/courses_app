@@ -1,3 +1,4 @@
+import 'package:courses_app/core/constants/app_constants.dart';
 import 'package:courses_app/core/routing/app_router.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -16,7 +17,7 @@ class CoursesApp extends StatelessWidget {
         return Directionality(textDirection: TextDirection.rtl, child: child!);
       },
       theme: ThemeData(
-        fontFamily: "elmessiri",
+        fontFamily: AppConstants.appFontFamily,
         scaffoldBackgroundColor: Colors.white,
         useMaterial3: true,
         appBarTheme: AppBarTheme(
