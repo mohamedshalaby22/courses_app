@@ -9,7 +9,11 @@ class AppTextStyles {
     color: Colors.black,
     fontWeight: FontWeight.bold,
   );
-
+  static const TextStyle font24PrimaryBold = TextStyle(
+    fontSize: 24,
+    color: AppColors.primaryColor,
+    fontWeight: FontWeight.bold,
+  );
   static const TextStyle font24BlackMedium = TextStyle(
     color: Colors.black,
     fontSize: 24.0,
@@ -20,6 +24,12 @@ class AppTextStyles {
     fontSize: 16.0,
     fontWeight: FontWeightHelper.medium,
   );
+  static const TextStyle font18WhiteMedium = TextStyle(
+    color: Colors.white,
+    fontSize: 18.0,
+    fontWeight: FontWeightHelper.medium,
+  );
+
   static const TextStyle font16PrimaryMedium = TextStyle(
     color: AppColors.primaryColor,
     fontSize: 16.0,
@@ -29,5 +39,10 @@ class AppTextStyles {
     color: Colors.grey,
     fontSize: 16.0,
     fontWeight: FontWeightHelper.regular,
+  );
+  static const TextStyle font16GreyMedium = TextStyle(
+    color: Colors.grey,
+    fontSize: 16.0,
+    fontWeight: FontWeightHelper.medium,
   );
 }

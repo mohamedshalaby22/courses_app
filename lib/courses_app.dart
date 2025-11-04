@@ -12,7 +12,7 @@ class CoursesApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       onGenerateRoute: AppRouter().generateRoute,
-      initialRoute: Routes.loginScreen,
+      initialRoute: Routes.onboardingScreen,
       builder: (context, child) {
         return Directionality(textDirection: TextDirection.rtl, child: child!);
       },

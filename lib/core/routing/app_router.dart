@@ -1,13 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:courses_app/core/routing/routes.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../features/auth/ui/screens/login_screen.dart';
 import 'package:courses_app/core/routing/router_helper.dart';
 import '../../features/auth/ui/screens/register_screen.dart';
 import '../../features/auth/ui/screens/reset_password_screen.dart';
+import '../../features/onboarding/logic/onboarding_cubit.dart';
+import '../../features/onboarding/ui/screens/onboarding_screen.dart';
 
 class AppRouter {
   Route? generateRoute(RouteSettings settings) {
     switch (settings.name) {
+      case Routes.onboardingScreen:
+        return buildRoute(
+          BlocProvider(
+            create: (context) => OnboardingCubit(),
+            child: const OnboardingScreen(),
+          ),
+        );
       case Routes.loginScreen:
         return buildRoute(const LoginScreen());
       case Routes.registerScreen:
