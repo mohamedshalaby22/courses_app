@@ -3,7 +3,7 @@ import 'package:hugeicons/hugeicons.dart';
 import '../../../../core/theme/app_text_styles.dart';
 import 'package:courses_app/core/theme/app_colors.dart';
 import 'package:courses_app/core/theme/app_spacing.dart';
-import 'package:courses_app/core/widgets/app_text_form_field.dart';
+import 'package:courses_app/core/presentation/widgets/app_text_form_field.dart';
 
 class ResetPasswordForm extends StatefulWidget {
   const ResetPasswordForm({super.key});

@@ -22,6 +22,10 @@ class Assets {
   /// assets/onboarding-3.png
   static const String onboarding3 = "assets/onboarding-3.png";
 
+  /// Assets for signal
+  /// assets/signal.gif
+  static const String signal = "assets/signal.gif";
+
   /// Assets for splashLogo
   /// assets/splash-logo.png
   static const String splashLogo = "assets/splash-logo.png";

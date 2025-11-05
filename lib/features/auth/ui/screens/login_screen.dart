@@ -1,8 +1,11 @@
-import '../../../../core/widgets/custom_appbar.dart';
+import 'package:courses_app/core/utils/extension/navigation_extension.dart';
+import 'package:courses_app/core/routing/routes.dart';
+
+import '../../../../core/presentation/widgets/custom_appbar.dart';
 import '../widgets/login_form.dart';
 import '../widgets/auth_header.dart';
 import 'package:flutter/material.dart';
-import '../../../../core/widgets/app_text_button.dart';
+import '../../../../core/presentation/widgets/app_text_button.dart';
 import 'package:courses_app/core/theme/app_spacing.dart';
 import '../widgets/privacy_policy_text.dart';
 
@@ -46,7 +49,15 @@ class LoginScreen extends StatelessWidget {
           children: [
             PrivacyPolicyText(),
             Gap.v12,
-            AppTextButton(text: "تسجيل الدخول", onPressed: () {}),
+            AppTextButton(
+              text: "تسجيل الدخول",
+              onPressed: () {
+                context.pushNamedAndRemoveUntil(
+                  Routes.mainLayout,
+                  predicate: (route) => false,
+                );
+              },
+            ),
           ],
         ),
       ),

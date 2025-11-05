@@ -1,4 +1,4 @@
-import 'package:courses_app/core/helpers/navigation_extension.dart';
+import 'package:courses_app/core/utils/extension/navigation_extension.dart';
 import 'package:courses_app/core/routing/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';

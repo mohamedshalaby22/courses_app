@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 
 import 'package:hugeicons/hugeicons.dart';
 
-import 'package:courses_app/core/helpers/navigation_extension.dart';
+import 'package:courses_app/core/utils/extension/navigation_extension.dart';
 import 'package:courses_app/core/theme/app_colors.dart';
 import 'package:courses_app/core/theme/app_spacing.dart';
-import 'package:courses_app/core/widgets/app_text_form_field.dart';
+import 'package:courses_app/core/presentation/widgets/app_text_form_field.dart';
 import 'package:courses_app/features/auth/ui/widgets/auth_fotter_text.dart';
 
 import '../../../../core/routing/routes.dart';

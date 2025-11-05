@@ -1,9 +1,9 @@
-import '../../../../core/widgets/custom_appbar.dart';
+import '../../../../core/presentation/widgets/custom_appbar.dart';
 import '../widgets/auth_header.dart';
 import 'package:flutter/material.dart';
 import '../widgets/privacy_policy_text.dart';
 import '../widgets/register_form.dart';
-import '../../../../core/widgets/app_text_button.dart';
+import '../../../../core/presentation/widgets/app_text_button.dart';
 import 'package:courses_app/core/theme/app_spacing.dart';
 
 class RegisterScreen extends StatelessWidget {

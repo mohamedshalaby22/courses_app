@@ -1,3 +1,4 @@
+import 'package:courses_app/core/presentation/layout/main_layout.dart';
 import 'package:flutter/material.dart';
 import 'package:courses_app/core/routing/routes.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -24,6 +25,9 @@ class AppRouter {
         return buildRoute(const RegisterScreen());
       case Routes.resetPasswordScreen:
         return buildRoute(const ResetPasswordScreen());
+      case Routes.mainLayout:
+        return buildRoute(const MainLayout());
+
       default:
         return buildRoute(
           Scaffold(

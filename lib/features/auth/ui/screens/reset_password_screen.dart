@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:courses_app/core/theme/app_spacing.dart';
-import 'package:courses_app/core/widgets/custom_appbar.dart';
-import 'package:courses_app/core/widgets/app_text_button.dart';
+import 'package:courses_app/core/presentation/widgets/custom_appbar.dart';
+import 'package:courses_app/core/presentation/widgets/app_text_button.dart';
 import '../widgets/auth_header.dart';
 import '../widgets/reset_password_form.dart';
 
