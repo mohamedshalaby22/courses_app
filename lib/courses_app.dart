@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-import 'package:courses_app/core/constants/app_constants.dart';
-import 'package:courses_app/core/routing/app_router.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-=======
->>>>>>> 33957f4 (save)
 import 'core/routing/routes.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/material.dart';
@@ -18,22 +11,6 @@ class CoursesApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-<<<<<<< HEAD
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      onGenerateRoute: AppRouter().generateRoute,
-      initialRoute: Routes.onboardingScreen,
-      builder: (context, child) {
-        return Directionality(textDirection: TextDirection.rtl, child: child!);
-      },
-      theme: ThemeData(
-        fontFamily: AppConstants.appFontFamily,
-        scaffoldBackgroundColor: Colors.white,
-        useMaterial3: true,
-        appBarTheme: AppBarTheme(
-          systemOverlayStyle: SystemUiOverlayStyle.dark,
-          backgroundColor: Colors.transparent,
-=======
     return MultiBlocProvider(
       providers: [BlocProvider(create: (context) => ConnectivityCubit())],
       child: MaterialApp(
@@ -54,7 +31,6 @@ class CoursesApp extends StatelessWidget {
             systemOverlayStyle: SystemUiOverlayStyle.dark,
             backgroundColor: Colors.transparent,
           ),
->>>>>>> 33957f4 (save)
         ),
       ),
     );
