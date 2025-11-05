@@ -27,13 +27,8 @@ class AppRouter {
         return buildRoute(const ResetPasswordScreen());
       case Routes.mainLayout:
         return buildRoute(const MainLayout());
-
       default:
-        return buildRoute(
-          Scaffold(
-            body: Center(child: Text('No route defined for ${settings.name}')),
-          ),
-        );
+        return null;
     }
   }
 }

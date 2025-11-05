@@ -12,12 +12,11 @@ class OnbaordingPageView extends StatelessWidget {
   Widget build(BuildContext context) {
     final cubit = context.read<OnboardingCubit>();
     return SizedBox(
-      height: 500,
+      height: 420,
       child: PageView.builder(
         itemCount: OnboardingData.pages.length,
         onPageChanged: (value) => cubit.changePage(value),
         controller: cubit.pageController,
-        physics: const BouncingScrollPhysics(),
         allowImplicitScrolling: true,
         itemBuilder: (_, index) => Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16),
@@ -25,8 +24,8 @@ class OnbaordingPageView extends StatelessWidget {
             children: [
               Image.asset(
                 OnboardingData.pages[index].image,
-                height: 300,
-                width: 300,
+                height: 250,
+                width: 250,
               ),
               Gap.v32,
               Text(

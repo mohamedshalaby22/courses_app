@@ -1,6 +1,7 @@
 import 'core/routing/routes.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/material.dart';
+import 'core/constants/app_constants.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:courses_app/core/routing/app_router.dart';
 import 'core/presentation/screens/no_internet_screen.dart';
@@ -15,6 +16,7 @@ class CoursesApp extends StatelessWidget {
       providers: [BlocProvider(create: (context) => ConnectivityCubit())],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
+        navigatorKey: AppConstants.navigatorKey,
         onGenerateRoute: AppRouter().generateRoute,
         initialRoute: Routes.onboardingScreen,
         builder: (context, child) {

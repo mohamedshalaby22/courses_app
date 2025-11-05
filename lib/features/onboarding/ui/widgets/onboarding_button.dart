@@ -10,6 +10,7 @@ class OnbaordingButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
+      behavior: HitTestBehavior.opaque,
       onTap: () => cubit.onNext(context: context),
       child: AnimatedContainer(
         duration: Duration(milliseconds: 900),

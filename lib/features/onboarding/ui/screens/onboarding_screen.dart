@@ -16,22 +16,19 @@ class OnboardingScreen extends StatelessWidget {
     return BlocBuilder<OnboardingCubit, OnboardingState>(
       builder: (context, state) {
         final cubit = context.read<OnboardingCubit>();
-        return AnimatedContainer(
-          duration: const Duration(milliseconds: 900),
-          // curve: Curves.fastOutSlowIn,
-          // color: cubit.backgroundColor[cubit.currentIndex],
-          child: Scaffold(
-            appBar: OnboardingAppbar(),
-            body: SafeArea(
+        return Scaffold(
+          appBar: OnboardingAppbar(),
+          body: SafeArea(
+            child: SingleChildScrollView(
               child: Column(
                 children: [
-                  Gap.v32,
+                  Gap.v20,
                   const OnboardingHeader(),
-                  Gap.v64,
+                  Gap.v32,
                   const OnbaordingPageView(),
                   Gap.v32,
                   const OnboardingDots(),
-                  Gap.v40,
+                  Gap.v32,
                   OnbaordingButton(cubit: cubit),
                 ],
               ),

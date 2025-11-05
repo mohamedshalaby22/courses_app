@@ -21,7 +21,10 @@ class OnboardingCubit extends Cubit<OnboardingState> {
   // onNext
   void onNext({required BuildContext context}) {
     if (currentIndex == OnboardingData.pages.length - 1) {
-      context.pushReplacementNamed(Routes.loginScreen);
+      context.pushNamedAndRemoveUntil(
+        Routes.loginScreen,
+        predicate: (route) => false,
+      );
     } else {
       currentIndex++;
       pageController.animateToPage(
